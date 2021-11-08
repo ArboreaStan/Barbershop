@@ -1,0 +1,62 @@
+:root {
+  --main-title-color: #ffffff;
+  --second-title-color: #303030;
+  --main-text-color: #555555;
+  --second-text-color: rgba(157, 164, 189, 0.6);
+  --third-text-color: #9da4bd;
+  --fourth-text-color: #303030;
+  --accent-color: #ff6c00;
+  --main-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --header-text-color: #ffffff;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #555555;
+}
+.header-navigation {
+}
+.header-logo {
+}
+
+.header-list {
+}
+.header-item {
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-text-color);
+}
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-text-color);
+}
+
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-btn-color);
+}

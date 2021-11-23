@@ -11,6 +11,36 @@
   --header-text-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Open sans', sans-serif;
 }
@@ -65,23 +95,48 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  min-width: 160px;
+  min-height: 40px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 /*-------------HEADER---------------*/
 
 .header {
   background-color: #555555;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
+  margin-right: 70px;
 }
 
 .header-list {
+  display: flex;
 }
 
 .header-item {
+}
+
+.header-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-link {
@@ -106,13 +161,8 @@ body {
 }
 
 .header-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--main-btn-color);
+  margin-left: 40px;
 }
 
 .header-btn:active {
@@ -124,7 +174,12 @@ body {
 .hero {
 }
 
+.hero-container {
+  display: flex;
+}
+
 .hero-list {
+  width: 93px;
 }
 
 .hero-item {
@@ -145,10 +200,13 @@ body {
 
 .hero-right {
   background-color: var(--second-title-color);
+  flex-grow: 1;
+  padding: 272px 0 206px 96px;
 }
 
 .hero-pre-title {
   color: var(--second-text-color);
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -158,21 +216,35 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: 20px;
 }
 
 .hero-after-title {
   color: var(--third-text-color);
+  width: 400px;
 }
 
 /*-------------ABOUT---------------*/
 
 .about {
+  padding-top: 121px;
+  padding-bottom: 130px;
+}
+
+.about-container {
+  display: flex;
 }
 
 .about-list {
+  display: flex;
+  margin-right: 64px;
 }
 
 .about-item {
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-right {
@@ -180,14 +252,17 @@ body {
 
 .about-pre-title {
   color: var(--fourth-text-color);
+  margin-bottom: 20px;
 }
 
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 
 .about-after-title {
   color: var(--main-text-color);
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -196,6 +271,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 40px;
 }
 
 .about-btn {
@@ -206,20 +282,39 @@ body {
 
 .prices {
   background-color: var(--fourth-text-color);
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .prices-pre-title {
   color: var(--second-text-color);
+  margin-bottom: 20px;
 }
 
 .prices-title {
   color: var(--main-title-color);
+  margin-bottom: 44px;
+}
+
+.prices-wrapp {
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .prices-list {
+  border: 1px solid #ffffff;
+  width: 50%;
+  padding: 30px 40px;
 }
 
 .prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -231,6 +326,8 @@ body {
 
 .prices-btn {
   color: var(--main-btn-color);
+  display: block;
+  margin: 0 auto;
 }
 
 /*-------------REASONS---------------*/
@@ -282,19 +379,33 @@ body {
 /*-------------MASTERS---------------*/
 
 .masters {
+  border-color: #f7f7f7;
+  margin-top: 130px;
+  margin-bottom: 130px;
 }
 
 .masters-pre-title {
   color: var(--fourth-text-color);
+  margin-bottom: 20px;
 }
 
 .masters-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .masters-list {
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .masters-item {
+  margin-right: 30px;
 }
+
+.masters-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .masters-item-title {
   font-size: 18px;
   font-weight: 400;

@@ -402,6 +402,10 @@ body {
   margin-right: 30px;
 }
 
+.masters-item-bottom {
+  padding-top: 30px;
+}
+
 .masters-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -413,7 +417,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
+
 .masters-item-text {
   font-size: 14px;
   line-height: 1.36;
@@ -425,16 +431,26 @@ body {
 /*-------------GALLERY---------------*/
 
 .gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
+
 .gallery-pre-title {
   color: var(--fourth-text-color);
+  margin-bottom: 30px;
 }
 
 .gallery-list {
+  display: flex;
 }
 .list {
 }
 .gallery-item {
+  margin-right: 30px;
+}
+
+.gallery-item:last-child {
+  margin-right: 0;
 }
 
 /*-------------ONLINE---------------*/

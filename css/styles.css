@@ -36,6 +36,37 @@ body {
   margin: -1px;
 }
 
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
 /*-------------HEADER---------------*/
 
 .header {
@@ -117,11 +148,6 @@ body {
 }
 
 .hero-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--second-text-color);
 }
 
@@ -135,9 +161,6 @@ body {
 }
 
 .hero-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--third-text-color);
 }
 
@@ -156,28 +179,14 @@ body {
 }
 
 .about-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
   color: var(--fourth-text-color);
 }
 
 .about-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 
 .about-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
@@ -190,12 +199,6 @@ body {
 }
 
 .about-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--second-btn-color);
 }
 
@@ -206,20 +209,10 @@ body {
 }
 
 .prices-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--second-text-color);
 }
 
 .prices-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 
@@ -237,12 +230,6 @@ body {
 }
 
 .prices-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--main-btn-color);
 }
 
@@ -281,27 +268,14 @@ body {
 }
 
 .reasons-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--fourth-text-color);
 }
 
 .reasons-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 
 .reasons-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 
@@ -311,20 +285,10 @@ body {
 }
 
 .masters-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--fourth-text-color);
 }
 
 .masters-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 .masters-list {
@@ -352,11 +316,6 @@ body {
 .gallery {
 }
 .gallery-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--fourth-text-color);
 }
 
@@ -373,11 +332,6 @@ body {
   background-color: var(--fourth-text-color);
 }
 .online-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 
@@ -387,11 +341,6 @@ body {
   background-color: var(--fourth-text-color);
 }
 .contacts-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 .contacts-address {

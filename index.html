@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -19,11 +20,11 @@
     <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
-                <a href="" class="header-logo">
+                <a href="" class="header-logo animate__animated animate__rubberBand">
                     <img src="./img/logo.svg" alt="Логотип компании">
                 </a>
                 <ul class="list header-list">
-                    <li class="header-item"><a class="link header-link" href="">О нас</a></li>
+                    <li class="header-item"><a class="link header-link active" href="">О нас</a></li>
                     <li class="header-item"><a class="link header-link" href="">Услуги и цены</a></li>
                     <li class="header-item"><a class="link header-link" href="">Мастера</a></li>
                     <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
@@ -31,21 +32,23 @@
             </nav>
             <div class="header-connect">
                 <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="header-btn btn" type="button">онлайн-запись</button>
+                <button class="header-btn btn" type="button" data-modal-open>онлайн-запись</button>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container hero-container">
-                <ul class="list hero-list">
-                    <li class="hero-item">
-                        <a href="" class="link hero-link">Instagram</a>
-                    </li>
-                    <li class="hero-item">
-                        <a href="" class="link hero-link">Youtube</a>
-                    </li>
-                </ul>
+                <div class="hero-left">
+                    <ul class="list hero-list">
+                        <li class="hero-item">
+                            <a href="" class="link hero-link">Instagram</a>
+                        </li>
+                        <li class="hero-item">
+                            <a href="" class="link hero-link">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="hero-right">
                     <p class="hero-pre-title pre-title" lang="en">A hair salon for men in Kyiv</p>
                     <h1 class="hero-title" lang="en">BarberShop</h1>
@@ -159,7 +162,12 @@
                 <h2 class="masters-title section-title">Наши мастера</h2>
                 <ul class="masters-list list">
                     <li class="masters-item">
-                        <img src="./img/masters1.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                        <div class="masters-item-wrap">
+                            <img src="./img/masters1.jpg" alt="барбер стрижет клиента" width="370" height="346">
+                            <p class="masters-item-top-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo enim eligendi animi ipsam, veritatis adipisci temporibus. Quasi, molestias tenetur illum ea nobis voluptatem expedita, labore quisquam, doloremque ex tempore deleniti debitis excepturi repellendus? Sunt incidunt sit numquam aut asperiores hic, non explicabo vel! Dignissimos voluptate fuga similique eveniet accusantium eos!
+                            </p>
+                        </div>
                         <div class="masters-item-bottom">
                             <h3 lang="en" class="masters-item-title">John Smith</h3>
                             <p lang="en" class="masters-item-text">Extreme Barber</p>
@@ -320,6 +328,16 @@
             </li>
         </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./img/icons.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
